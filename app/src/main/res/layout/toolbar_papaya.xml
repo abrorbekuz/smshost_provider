@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fce76c"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/logout"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:contentDescription="@string/logout"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_left_arrow" />
+
+    <customfonts.MyTextView_Roboto_Bold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#000"
+        android:hint="@string/sms_host"
+        android:layout_marginStart="20dp"
+        android:background="#00000000"/>
+
+    <ImageView
+        android:id="@+id/refresh"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_gravity="right"
+        android:contentDescription="@string/reload"
+        android:src="@drawable/ic_refresh"
+        tools:ignore="RtlHardcoded" />
+</android.widget.Toolbar>

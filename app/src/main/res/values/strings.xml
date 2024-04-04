@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Local Message API</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
+    <string name="about">About</string>
+    <string name="refresh">Refresh</string>
+    <string name="total">Total</string>
+    <string name="today">Today</string>
+    <string name="_3">3%</string>
+    <string name="_43">43</string>
+    <string name="adc1cf87_fe30_4186_81bf_242c1bdd2da1">adc1cf87-fe30-4186-81bf-242c1bdd2da1</string>
+    <string name="reload">reload</string>
+    <string name="logout">logout</string>
+    <string name="sms_host">SMS HOST</string>
+    <string name="device">Device</string>
+</resources>

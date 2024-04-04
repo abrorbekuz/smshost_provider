@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#292a2e"
+    tools:context=".MainActivity2">
+
+    <include layout="@layout/toolbar_papaya" android:id="@+id/toolbar"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:divider="@drawable/vertical_divider">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <customfonts.MyTextView_Roboto_Light
+                        android:id="@+id/total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="26sp"
+                        android:textColor="#fff"/>
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total"
+                        android:textSize="11sp"
+                        android:textColor="#fce76c"/>
+                </LinearLayout>
+
+<!--                <View-->
+<!--                    android:layout_width="1dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="#1c1c1f"/>-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:orientation="vertical">-->
+
+
+<!--                    <customfonts.MyTextView_Roboto_Light-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="10K"-->
+<!--                        android:textSize="26dp"-->
+<!--                        android:textColor="#fff"/>-->
+
+<!--                    <customfonts.MyTextView_Roboto_Medium-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Sent"-->
+<!--                        android:textSize="11dp"-->
+<!--                        android:textColor="#fce76c"/>-->
+<!--                </LinearLayout>-->
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#1c1c1f"/>
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <customfonts.MyTextView_Roboto_Light
+                        android:id="@+id/today"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="26sp"
+                        android:textColor="#fff"/>
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/today"
+                        android:textSize="11sp"
+                        android:textColor="#fce76c"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!-- Additional layer -->
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <customfonts.MyTextView_Roboto_Light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5%"
+                        android:textSize="26dp"
+                        android:textColor="#fff"/>
+
+                    <customfonts.MyTextView_Roboto_Medium
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Magnesium"
+                        android:textSize="11dp"
+                        android:textColor="#fce76c"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+             -->
+
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="36dp"-->
+<!--                android:layout_marginStart="18dp"-->
+<!--                android:orientation="horizontal">-->
+
+
+<!--                <customfonts.MyTextView_Halvetica_Medium-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Success Rate"-->
+<!--                    android:textColor="#fff"/>-->
+
+<!--                &lt;!&ndash; Custom tablets &ndash;&gt;-->
+<!--                &lt;!&ndash;-->
+<!--                <customfonts.MyTextView_Helvetica_Bold-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="11 g"-->
+<!--                    android:textSize="12.5dp"-->
+<!--                    android:paddingLeft="12dp"-->
+<!--                    android:paddingRight="12dp"-->
+<!--                    android:paddingTop="5dp"-->
+<!--                    android:paddingBottom="5dp"-->
+<!--                    android:layout_marginLeft="15dp"-->
+<!--                    android:textColor="#000"-->
+<!--                    android:background="@drawable/rect"/>-->
+<!--                &ndash;&gt;-->
+
+<!--                <customfonts.MyTextView_Roboto_Medium-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/_3"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:gravity="right"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    tools:ignore="RtlHardcoded" />-->
+
+
+
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="1dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginLeft="18dp"-->
+<!--                android:layout_marginRight="18dp"-->
+<!--                android:background="#1c1c1f"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:layout_marginStart="18dp"-->
+<!--                android:orientation="horizontal">-->
+
+
+<!--                <customfonts.MyTextView_Halvetica_Medium-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Daily Dose"-->
+<!--                    android:textColor="#fff"/>-->
+
+
+
+<!--                <customfonts.MyTextView_Roboto_Medium-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/_43"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:gravity="right"-->
+<!--                    android:layout_marginRight="20dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    tools:ignore="RtlHardcoded" />-->
+
+
+
+<!--            </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#292a2e"/>
+
+            <LinearLayout
+                android:id="@+id/deviceWrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="18dp"
+                android:orientation="horizontal">
+
+
+                <customfonts.MyTextView_Halvetica_Medium
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/device"
+                    android:layout_gravity="bottom"
+                    android:textColor="#fff"/>
+
+                <customfonts.MyTextView_Roboto_Medium
+                    android:id="@+id/deviceId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textColor="#fff"
+                    android:gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="bottom"
+                    tools:ignore="RtlHardcoded" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="18dp"
+                android:background="#292a2e"/>
+
+            <!--
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:paddingBottom="30dp"
+                android:background="#1c1c1f"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Helvetica_Light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meal Calorie Rate"
+                        android:textColor="#fce76b"
+                        android:textSize="16dp" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="The papaya,papaw, or pawpaw is the plant Carica papaya, one of the 22 accepted species in the genus Carica of the family. Its origin is in the topics of the America perhaps from..."
+                        android:textColor="#bebebe" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="right"
+                        android:text="Read More"
+                        android:textColor="#838383" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Helvetica_Light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="asdasd"
+                        android:textColor="#fce76b"
+                        android:textSize="16dp" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="The papaya,papaw, or pawpaw is the plant Carica papaya, one of the 22 accepted species in the genus Carica of the family. Its origin is in the topics of the America perhaps from..."
+                        android:textColor="#bebebe" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="right"
+                        android:text="Read More"
+                        android:textColor="#838383" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical">
+
+                    <customfonts.MyTextView_Helvetica_Light
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Meal Calorie Rate"
+                        android:textColor="#fce76b"
+                        android:textSize="16dp" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:lineSpacingExtra="3dp"
+                        android:text="The papaya,papaw, or pawpaw is the plant Carica papaya, one of the 22 accepted species in the genus Carica of the family. Its origin is in the topics of the America perhaps from..."
+                        android:textColor="#bebebe" />
+
+                    <customfonts.MyTextView_Roboto_Regular
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="right"
+                        android:text="Read More"
+                        android:textColor="#838383" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            -->
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
